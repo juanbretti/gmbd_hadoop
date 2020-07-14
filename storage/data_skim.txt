@@ -1,0 +1,39 @@
+> skim(data)
+-- Data Summary ------------------------
+                           Values 
+Name                       data   
+Number of rows             6362620
+Number of columns          11     
+_______________________           
+Column type frequency:            
+  character                3      
+  logical                  2      
+  numeric                  6      
+________________________          
+Group variables            None   
+
+-- Variable type: character ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+# A tibble: 3 x 8
+  skim_variable n_missing complete_rate   min   max empty n_unique whitespace
+* <chr>             <int>         <dbl> <int> <int> <int>    <int>      <int>
+1 type                  0             1     5     8     0        5          0
+2 nameOrig              0             1     5    11     0  6353307          0
+3 nameDest              0             1     2    11     0  2722362          0
+
+-- Variable type: logical --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+# A tibble: 2 x 5
+  skim_variable  n_missing complete_rate       mean count                  
+* <chr>              <int>         <dbl>      <dbl> <chr>                  
+1 isFraud                0             1 0.00129    FAL: 6354407, TRU: 8213
+2 isFlaggedFraud         0             1 0.00000251 FAL: 6362604, TRU: 16  
+
+-- Variable type: numeric --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+# A tibble: 6 x 11
+  skim_variable  n_missing complete_rate     mean       sd    p0    p25     p50      p75       p100 hist 
+* <chr>              <int>         <dbl>    <dbl>    <dbl> <dbl>  <dbl>   <dbl>    <dbl>      <dbl> <chr>
+1 step                   0             1     243.     142.     1   156     239      335        743  ▅▇▆▁▁
+2 amount                 0             1  179862.  603858.     0 13390.  74872.  208721.  92445517. ▇▁▁▁▁
+3 oldbalanceOrg          0             1  833883. 2888243.     0     0   14208   107315.  59585040. ▇▁▁▁▁
+4 newbalanceOrig         0             1  855114. 2924049.     0     0       0   144258.  49585040. ▇▁▁▁▁
+5 oldbalanceDest         0             1 1100702. 3399180.     0     0  132706.  943037. 356015889. ▇▁▁▁▁
+6 newbalanceDest         0             1 1224996. 3674129.     0     0  214661. 1111909. 356179279. ▇▁▁▁▁
